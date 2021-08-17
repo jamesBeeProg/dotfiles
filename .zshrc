@@ -12,3 +12,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 alias dot="/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME"
+
+path+=("$HOME/wpilib/2021/frccode")
+
