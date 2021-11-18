@@ -21,6 +21,9 @@ logout
 
 dotfiles config --local status.showUntrackedFiles no
 
+yay -S xdg-user-dirs
+xdg-user-dirs-update
+
 yay -S xorg-server xorg-xinit i3-gaps 
 yay -S ttf-fira-code noto-fonts ttf-twemoji
 
