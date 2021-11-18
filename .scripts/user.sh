@@ -21,9 +21,10 @@ logout
 
 dotfiles config --local status.showUntrackedFiles no
 
-yay -S xorg-server xorg-xinit i3-gaps ttf-fira-code
+yay -S xorg-server xorg-xinit i3-gaps 
+yay -S ttf-fira-code noto-fonts ttf-twemoji
 
 yay -S rustup
 rustup toolchain install stable beta nightly
-yay -S alacritty google-chrome dmenu visual-studio-code-bin
+yay -S alacritty google-chrome dmenu visual-studio-code-bin starship
 
