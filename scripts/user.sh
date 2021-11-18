@@ -15,3 +15,10 @@ rm -rf yay
 sudo pacman -S zsh
 chsh -s /bin/zsh
 logout
+
+git clone --bare https://github.com/jamesBeeProg/dotfiles.git $HOME/.dotfiles
+logout
+
+dotfiles config --local status.showUntrackedFiles no
+
+yay -S xorg-server xorg-xinit i3-gaps
