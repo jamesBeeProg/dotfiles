@@ -29,5 +29,4 @@ yay -S ttf-fira-code noto-fonts ttf-twemoji
 
 yay -S rustup
 rustup toolchain install stable beta nightly
-yay -S alacritty google-chrome rofi visual-studio-code-bin starship
-
+yay -S alacritty google-chrome rofi visual-studio-code-bin starship feh 
