@@ -29,4 +29,8 @@ yay -S ttf-fira-code noto-fonts ttf-twemoji
 
 yay -S rustup
 rustup toolchain install stable beta nightly
-yay -S alacritty google-chrome rofi visual-studio-code-bin starship feh 
+yay -S alacritty google-chrome rofi visual-studio-code-bin starship feh polybar
+
+yay -S pulseaudio pulsemixer
+pulseaudio --start
+# note audio starts muted
