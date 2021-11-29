@@ -28,7 +28,7 @@ yay -S ttf-fira-code noto-fonts ttf-twemoji
 
 yay -S rustup
 rustup toolchain install stable beta nightly
-yay -S alacritty google-chrome rofi visual-studio-code-bin starship feh maim xclip arandr
+yay -S alacritty google-chrome rofi visual-studio-code-bin starship feh maim xclip arandr polybar
 
 yay -S pulseaudio pulsemixer
 pulseaudio --start
@@ -37,3 +37,7 @@ pulseaudio --start
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+yay -S mpd
+systemctl enable mpd.service
+systemctl start mpd.service
