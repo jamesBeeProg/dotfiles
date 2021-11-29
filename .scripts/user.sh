@@ -15,7 +15,6 @@ rm -rf yay
 sudo pacman -S zsh
 chsh -s /bin/zsh
 logout
-
 git clone --bare https://github.com/jamesBeeProg/dotfiles.git $HOME/.dotfiles
 logout
 
@@ -29,7 +28,7 @@ yay -S ttf-fira-code noto-fonts ttf-twemoji
 
 yay -S rustup
 rustup toolchain install stable beta nightly
-yay -S alacritty google-chrome rofi visual-studio-code-bin starship feh maim xclip
+yay -S alacritty google-chrome rofi visual-studio-code-bin starship feh maim xclip arandr
 
 yay -S pulseaudio pulsemixer
 pulseaudio --start
