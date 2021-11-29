@@ -31,6 +31,10 @@ yay -S rustup
 rustup toolchain install stable beta nightly
 yay -S alacritty google-chrome rofi visual-studio-code-bin starship feh maim xclip
 
+yay -S pulseaudio pulsemixer
+pulseaudio --start
+# note audio starts muted
+
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
