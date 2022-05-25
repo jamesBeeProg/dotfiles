@@ -27,4 +27,4 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 # Change into the computer
 curl https://raw.githubusercontent.com/jamesBeeProg/dotfiles/main/.scripts/cpwd/step2.sh > /mnt/step2.sh
-arch-chroot /mnt /step2.sh
+arch-chroot /mnt /bin/bash /step2.sh

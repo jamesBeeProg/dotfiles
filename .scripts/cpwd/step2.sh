@@ -22,6 +22,7 @@ ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 hwclock --systohc --utc
 
 # Setup sudo
+passwd -d root
 echo 'ALL ALL=(ALL:ALL) NOPASSWD: ALL' | EDITOR='tee -a' visudo
 
 # Clean up
