@@ -1,15 +1,17 @@
 #!/bin/bash
+set -euo pipefail
 
 # Set hostname
 echo cpwdtoast > /etc/hostname
 
 # Setup boot loader
-pacman -S grub efibootmgr intel-ucode
+pacman -S --noconfirm grub efibootmgr intel-ucode amd-ucode 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
 grub-mkconfig -o /boot/grub/grub.cfg
+cp /boot/EFI/grub/grubx64.efi /boot/EFI/boot/bootx64.efi
 
 # Setup network
-pacman -S networkmanager
+pacman -S --noconfirm networkmanager
 systemctl enable NetworkManager.service
 
 # Setup locale

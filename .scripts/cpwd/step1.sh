@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 # Select disk
 lsblk
